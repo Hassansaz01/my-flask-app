@@ -11,7 +11,7 @@
 
   <script>
     function callBackend() {
-      fetch('http://127.0.0.1:5000/')
+      fetch('http://16.170.242.143:5000/api')
         .then(response => response.json())
         .then(data => {
           document.getElementById('output').innerText = data.message;
